@@ -1,0 +1,22 @@
+{
+  "name": "@rickselby/tablesorter-bootstrap-sass",
+  "version": "1.0",
+  "description": "Lightweight bootstrap theme for Mottie's tablesorter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickselby/tablesorter-bootstrap-sass.git"
+  },
+  "keywords": [
+    "mottie",
+    "tablesorter"
+  ],
+  "author": "Rick Selby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickselby/tablesorter-bootstrap-sass/issues"
+  },
+  "homepage": "https://github.com/rickselby/tablesorter-bootstrap-sass#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}

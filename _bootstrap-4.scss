@@ -1,0 +1,35 @@
+
+$sorter-padding: 1rem !default;
+
+.tablesorter-bootstrap-4 {
+
+  // Ignore headers without sorters
+  .tablesorter-header:not(.sorter-false) {
+    background-position: right $table-cell-padding center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    white-space: normal;
+    vertical-align: middle;
+
+    // Add right padding to fit the sorting icons
+    padding-right: $table-cell-padding + $sorter-padding;
+  }
+
+  .tablesorter-headerUnSorted:not(.sorter-false) {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE0IDIwIj48cGF0aCBkPSJNMTQgMTNsLTIuNS0yLjVMNyAxNWwtNC41LTQuNUwwIDEzbDcgN3pNMTQgNy41TDExLjUgMTAgNyA1LjUgMi41IDEwIDAgNy41bDctN3oiLz48L3N2Zz4=);
+  }
+  .tablesorter-headerAsc {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE0IDIwIj48cGF0aCBkPSJNMTQgNy41TDExLjUgMTAgNyA1LjUgMi41IDEwIDAgNy41bDctN3oiLz48L3N2Zz4=);
+  }
+  .tablesorter-headerDesc {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE0IDIwIj48cGF0aCBkPSJNMTQgMTNsLTIuNS0yLjVMNyAxNWwtNC41LTQuNUwwIDEzbDcgN3oiLz48L3N2Zz4=);
+  }
+
+  // Alter padding if the table is small
+  &.table-sm {
+    .tablesorter-header:not(.sorter-false) {
+      background-position: right $table-cell-padding-sm center;
+      padding-right: $table-cell-padding-sm + $sorter-padding;
+    }
+  }
+}
